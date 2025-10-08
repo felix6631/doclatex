@@ -1,0 +1,63 @@
+\documentclass[a4paper,12pt]{article}
+
+% ====== Language and Encoding ======
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{kotex}            % Korean support
+
+% ====== Math and Symbols ======
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+
+% ====== Code and Verbatim ======
+\usepackage{listings}
+\usepackage{xcolor}
+
+% ====== Tables and Figures ======
+\usepackage{array,booktabs,multirow}
+\usepackage{graphicx}
+\usepackage{caption}
+
+% ====== References, Index, Hyperlinks ======
+\usepackage{hyperref}
+\usepackage{makeidx}
+\makeindex
+
+% ====== Document Info ======
+\title{ISO/IEC 9899:2024 -- C23 Standard (Korean Translation Draft)}
+\author{Felix Brown}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\clearpage
+
+% ====== Chapters ======
+\input{chapters/01_scope}
+\input{chapters/02_references}
+\input{chapters/03_terms}
+\input{chapters/04_conformance}
+\input{chapters/05_environment}
+\input{chapters/06_language}
+\input{chapters/07_library}
+
+% ====== Annexes ======
+\appendix
+\input{annexes/annex_a}
+\input{annexes/annex_b}
+\input{annexes/annex_c}
+\input{annexes/annex_d}
+\input{annexes/annex_e}
+\input{annexes/annex_f}
+\input{annexes/annex_g}
+\input{annexes/annex_h}
+\input{annexes/annex_i}
+\input{annexes/annex_j}
+\input{annexes/annex_k}
+\input{annexes/annex_l}
+\input{annexes/annex_m}
+
+\printindex
+\end{document}
