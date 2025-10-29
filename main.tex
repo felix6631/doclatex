@@ -14,9 +14,19 @@
 \usepackage{xcolor}
 
 % ====== Tables and Figures ======
-\usepackage{array,booktabs,multirow}
+\usepackage{array,booktabs,multirow} 
 \usepackage{graphicx}
 \usepackage{caption}
+
+% ====== ISO-style numbered paragraphs ======
+\newcounter{pnum}
+\newcommand{\pnumauto}{%
+  \refstepcounter{pnum}%
+  \noindent\makebox[1.5em][r]{\thepnum}\hspace{0.5em}\ignorespaces
+}
+
+% ====== Layout Settings ======
+\usepackage{enumitem}
 
 % ====== References, Index, Hyperlinks ======
 \usepackage{hyperref}
